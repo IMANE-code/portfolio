@@ -1,0 +1,38 @@
+@media (max-width:900px) {
+    #menu-area ul {
+        width: 500px;
+        justify-content: space-around;
+        list-style: none;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #div-about {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 100%;
+        height: cover;
+    }
+
+    #article-service {
+        padding: 80px;
+        background-color: #00000062;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #article-service div {
+        width: 100%;
+        height: 70vh;
+
+    }
+
+    #article-service p {
+        padding: 20px;
+        font-size: 14px;
+        height: 10vh;
+    }
+}
