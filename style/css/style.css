@@ -224,6 +224,8 @@ nav.black {
 
 #service h1 {
     margin: 20vh;
+    width:100vw;
+    text-align:conter;
 }
 
 #article-service {
