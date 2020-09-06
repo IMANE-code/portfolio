@@ -10,7 +10,6 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>IMANE BENKHADRA</title>
-    <link rel="stylesheet" href="style/css/mediaquery.css">
     <link rel="stylesheet" href="style/css/style.css">
     <script src="js/js.js"></script>
 </head>
@@ -51,7 +50,7 @@
         </nav>
 
         <div class="banner-text">
-            <h1>HI,WELCOME TO MY WEBSITE</h1>
+            <h1>HI,WELCOME TO MY WEBSITE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
             <h2>IMANE BENKHADRA</h2>
             <input type="submit" id="contact-me" value="CONTACT ME">
         </div>
@@ -152,53 +151,27 @@
             </div>
         </article>
     </section>
+    <video autoplay muted loop id="myVideo">
+        <source src="design/img/Animated Website Presentation hd.mp4" type="video/mp4">
+    </video>
     <section id="project">
         <h1> My projects</h1>
-        <section>
-            <article>
-                <img src="design/img/Anno.png" />
-                <img src="design/img/desktop-design.jpg" />
-                <img src="design/img/Annotatio17.png" />
-                <img src="design/img/desktop-preview.jpg" />
-                <img src="design/img/Ann 151528.png" />
-            </article>
-            <article>
-                <div id="back-project">
-                    <div>
-                        <h3>
-                            Site corona verus
-                        </h3>
-                    </div>
-                </div>
-                <div id="back-project">
-                    <div>
-                        <h3>
-                            site manage
-                        </h3>
-                    </div>
-                </div>
-                <div id="back-project">
-                    <div>
-                        <h3>
-                            do list
-                        </h3>
-                    </div>
-                </div>
-                <div id="back-project">
-                    <div>
-                        <h3>
-                            Game Enonc-rock-paper-scissors
-                        </h3>
-                    </div>
-                </div>
-                <div id="back-project">
-                    <div>
-                        <h3>Horlogue</h3>
-                    </div>
-                </div>
-            </article>
-        </section>
+        <article id="slide1-projet">
+            <div class="slide hi-slide">
+                <div class="hi-prev "></div>
+                <div class="hi-next "></div>
+                <ul>
+                    <li><img src="design/img/Anno.png" alt="Img 1" /></li>
+                    <li><img src="design/img/Annotatio17.png" alt="Img 2" /></li>
+                    <li><img src="design/img/desktop-design.jpg" alt="Img 3" /></li>
+                    <li><img src="design/img/Annotatio17.png" alt="Img 4" /></li>
+                    <li><img src="design/img/H.png" alt="Img 4" /></li>
+                    <li><img src="design/img/Anno.png" alt="Img 4" /></li>
+                    <li><img src="design/img/desktop-preview.jpg" alt="Img 4" /></li>
+                </ul>
+            </div>
     </section>
+
     <section id="info-contact">
         <h1> Contact</h1>
         <article>
@@ -240,6 +213,11 @@
             <img src="design/img/github (1).svg" style="padding: 10px;" />
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.hislide.js"></script>
+    <script>
+        $('.slide').hiSlide();
+    </script>
 </body>
 
 </html>

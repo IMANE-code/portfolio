@@ -1,0 +1,168 @@
+@import "https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,800;0,900;1,100;1,200;1,900&display=swap";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    height: cover;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-image: linear-gradient(90deg, #9399ff, #faafff);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    font-weight: 900;
+}
+
+nav {
+    position: relative;
+    top: -100px;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    display: none;
+    animation: slid 2s;
+}
+
+@keyframes slid {
+    from {
+        left: -300px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+
+ul {
+    list-style: none;
+    text-align: center;
+}
+
+ul li {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #9399ff;
+    cursor: pointer;
+}
+
+ul li:hover {
+    background-color: #c5c8fc;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    padding: 40px;
+    font-weight: 200;
+    color: black;
+}
+
+ul li a:hover {
+    color: #fd5edb;
+}
+
+#close:hover {
+    background-color: red;
+    display: block;
+}
+
+form {
+    display: none;
+    width: 60vw;
+    height: cover;
+    margin: 40px auto;
+    background: whitesmoke;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+    animation: zoom 3s;
+}
+
+section {
+    margin: 40px auto;
+    width: 50vw;
+    display: flex;
+    height: cover;
+    text-align: center;
+    flex-direction: column;
+    animation: zoom 3s;
+    display: none;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+#ferme {
+    width: 60vw;
+    height: 60px;
+}
+
+#x {
+    width: 60px;
+    height: 40px;
+    background-color: red;
+    float: right;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="text"],
+input[type="file"],
+input[type="password"] {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+textarea {
+    width: 400px;
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    margin: 10px auto;
+}
+
+#update {
+    font-size: 1rem;
+    font-weight: 900;
+    color: white;
+    width: 200px;
+    height: 50px;
+    outline: 0;
+    border: none;
+    background: rgb(62, 62, 252);
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    margin: 20px;
+}
+
+#update:hover {
+    background: rgb(105, 105, 255);
+}

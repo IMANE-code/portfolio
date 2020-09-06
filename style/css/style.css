@@ -17,7 +17,7 @@ header {
     width: 100vw;
     color: white;
     height: 100vh;
-    background-image: url('../../design/img/pc.png');
+    background-image: url('../../design/img/Girl vibes.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -28,7 +28,6 @@ header {
     display: block;
     z-index: 100;
     overflow: hidden;
-
 }
 
 .navbar-nav {
@@ -57,13 +56,7 @@ header {
     text-transform: uppercase;
 }
 
-.navbar-light .navbar-brand {
-    color: #fff;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: bold;
 
-}
 
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .navlink.active,
@@ -73,9 +66,8 @@ header {
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: wheat;
+    color: white;
     display: inline-block;
-
 }
 
 .navbar-nav {
@@ -87,14 +79,12 @@ header {
     padding: 10px;
 }
 
-.nav-link.active,
-.nav-link:focus {
-    color: #fff;
-}
+
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     color: rgb(95, 95, 95) !important;
+    background-image: linear-gradient(90deg, #faafff, #9399ff);
 }
 
 .w-100 {
@@ -102,7 +92,7 @@ header {
 }
 
 nav.black {
-    background: rgba(0, 0, 0, .8);
+    background: #9399ff;
 }
 
 @media only screen and (max-width:1000px) {
@@ -110,11 +100,11 @@ nav.black {
         width: 100%;
         height: 80vh;
         text-align: center;
-        background: rgba(0, 0, 0, 0.925);
+        background: #9399ff;
     }
 
     .navbar-nav.ml-auto a:hover {
-        background-color: wheat;
+        background-color: #fca6c7;
         width: 100%;
     }
 
@@ -122,7 +112,7 @@ nav.black {
         padding: 1px;
         font-size: 18px;
         line-height: 0.3;
-        background: wheat;
+        background: #faafff;
     }
 }
 
@@ -138,53 +128,73 @@ nav.black {
 }
 
 .banner-text h1 {
-    animation: type 3s steps(22)infinite;
+    animation: zoom 6s infinite;
     overflow: hidden;
     white-space: nowrap;
-    color: wheat;
-    width: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg, #9ba0ff, #f784ff);
+    background-repeat: repeat;
+    font-size: 2.5rem;
     font-weight: 900;
 }
 
 .banner-text h2 {
-    font-size: 3rem;
-    text-shadow: 10px 10px 6px wheat;
-    width: 22ch;
+    font-size: 2.5rem;
+    text-shadow: 10px 10px 6px #faafff;
+    width: 24ch;
+    font-weight: 900;
+    animation: zoom 6s infinite;
 }
 
-@keyframes type {
-    0% {
-        width: 0ch;
-        border-right: none;
-    }
-
-    50% {
-        width: 22ch;
-    }
-
-    100% {
-        width: 0ch;
-    }
-}
 
 #contact-me,
 #send {
-    background-color: black;
     font-size: 1rem;
     font-weight: 900;
-    color: wheat;
+    color: white;
     width: 200px;
     height: 50px;
-    border-radius: 50px;
     outline: 0;
     border: none;
+    border-radius: 50px;
+    animation: zoom2 3s infinite;
+    box-shadow: 0 0 20px black;
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+@keyframes zoom2 {
+    0% {
+        width: 200px;
+        background-image: linear-gradient(90deg, #faafff, #9399ff);
+        height: 50px;
+    }
+
+    50% {
+        width: 300px;
+        background-image: linear-gradient(180deg, #faafff, #9399ff);
+        height: 60px;
+    }
+
+    100% {
+        background-image: linear-gradient(90deg, #faafff, #9399ff);
+        width: 200px;
+        height: 50px;
+    }
 }
 
 #contact-me:hover,
 #send:hover {
-    background-color: wheat;
     color: black;
-    box-shadow: 0 0 20px black;
 }
 
 #about {
@@ -207,11 +217,12 @@ nav.black {
 #article-about {
     color: white;
     padding: 5%;
-    background-color: black;
+    background-color: #faafff;
 }
 
 .about-skills {
-    background-color: wheat;
+    background-color: #ebdbff;
+    background-image: url("../../design/img/Dégradés de couleurs _ comment et pourquoi _ - 99designs.png");
     padding: 10vh;
     width: 100%;
 }
@@ -224,13 +235,11 @@ nav.black {
 
 #service h1 {
     margin: 20vh;
-    width:100vw;
-    text-align:conter;
 }
 
 #article-service {
     padding: 80px;
-    background-color: #00000062;
+    background-color: whitesmoke;
     display: flex;
     justify-content: space-between;
 }
@@ -238,21 +247,21 @@ nav.black {
 #article-service div {
     width: 23%;
     height: 70vh;
-    background-color: wheat;
+    background-image: linear-gradient(90deg, #faafff, #9399ff);
     box-shadow: 0 0 10px rgb(0, 0, 0);
     background-attachment: fixed;
 }
 
 #article-service div:hover {
     box-shadow: 0 0 30px black;
+    background-image: linear-gradient(90deg, #9399ff, #faafff);
+    height: 75vh;
 }
 
 #article-service p {
     padding: 20px;
     font-size: 14px;
-    color: wheat;
     height: 50vh;
-    background-color: black;
 }
 
 .icone-service {
@@ -264,93 +273,134 @@ nav.black {
 #article-service h4 {
     height: 10vh;
     color: black;
-    background-color: wheat;
 }
 
 #project {
-    height: cover;
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+}
+
+#project h1 {
+    padding: 40px;
     width: 100%;
     text-align: center;
 }
 
-#project section {
-    background-color: whitesmoke;
-    height: 80vh;
-    padding: 40px;
-}
-
 #project article {
-    display: flex;
-    justify-content: space-between;
+    width: 100vw;
+    height: cover;
+    padding: 3vh;
+    background-image: linear-gradient(90deg, #faafff, #9399ff);
+    overflow-x: hidden;
 }
 
-#project article img {
-    height: 50vh;
-    width: 20%;
-    padding: 10px;
-}
-
-#back-project {
-    background-color: rgba(0, 0, 0, 0.644);
-    height: 50vh;
-    width: 20%;
+.hi-slide {
     position: relative;
-    top: -50vh;
-    margin: 10px;
+    width: 754px;
+    height: 292px;
+    margin: 10vh auto 0;
+}
+
+.hi-slide .hi-next,
+.hi-slide .hi-prev {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
     cursor: pointer;
-    transition: ease-out 1s;
-    box-shadow: 10px 10px 10px black;
+    background-color: #fff;
+    color: black;
+    transition: all 0.6s;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-#project h1 {
-    margin: 20vh;
+.hi-slide .hi-next:hover,
+.hi-slide .hi-prev:hover {
+    opacity: 1;
+    background-color: #fff;
 }
 
-#back-project div {
-    color: white;
-    height: 45vh;
-    width: 80%;
-    border: 4px solid white;
-    margin: 7% auto;
+.hi-slide .hi-prev {
+    left: -60px;
 }
 
-#back-project div h3 {
-    margin: 30% auto;
-    padding: 5px;
+.hi-slide .hi-prev::before {
+    content: '<';
 }
 
-#back-project:hover {
-    background-color: black;
+.hi-slide .hi-next {
+    right: -60px;
 }
 
-#back-project div:hover {
-    margin: 5% auto;
-    height: 47vh;
-    width: 90%;
-    color: wheat;
-    border: 4px solid wheat;
+.hi-slide .hi-next::before {
+    content: '>';
+}
+
+.hi-slide>ul {
+    list-style: none;
+    position: relative;
+    width: 754px;
+    height: 292px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hi-slide>ul>li {
+    overflow: hidden;
+    position: absolute;
+    z-index: 0;
+    left: 377px;
+    top: 146px;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 3px solid #fff;
+    background-color: #333;
+    cursor: pointer;
+}
+
+.hi-slide>ul>li>img {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+#myVideo {
+    object-fit: cover;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 80vh;
+    margin-top: 10vh;
 }
 
 #info-contact {
     width: 90vw;
     display: flex;
     margin: auto;
-    background: url("../../design/img/pc.png") fixed;
-
+    background: url("../../design/img/Inspiring 2017 Diaries & Journals.png") fixed;
+    background-position: center center;
+    background-size: cover;
 }
 
 #info-contact h1 {
     width: 50%;
     margin: auto;
     text-align: center;
-    background-color: black;
-    color: white;
+    background-image: url("../../design/img/Dégradés\ de\ couleurs\ _\ comment\ et\ pourquoi\ _\ -\ 99designs.png");
 }
 
 #info-contact article {
-    background-color: black;
+    background-image: url("../../design/img/Dégradés\ de\ couleurs\ _\ comment\ et\ pourquoi\ _\ -\ 99designs.png");
     text-align: center;
-    color: wheat;
     width: 45vw;
 }
 
@@ -388,12 +438,14 @@ textarea {
 
 textarea:hover,
 input:hover {
-    border: 2px solid wheat;
-    box-shadow: 0 0 10px wheat;
+    box-shadow: 0 0 10px #9399ff;
 }
 
 footer {
-    background: black;
+    background-image: url("../../design/img/Dégradés de couleurs _ comment et pourquoi _ - 99designs.png");
+    background-position: center center;
+    background-size: cover;
+    overflow-x: hidden;
     color: white;
     padding: 50px;
 }
@@ -404,9 +456,8 @@ footer div {
 }
 
 @media (max-width:900px) {
-
     .banner-text h1 {
-        animation: type 10s steps(22)infinite;
+        animation: zoom 6s infinite;
         margin: auto;
         font-size: 1.5rem;
     }
@@ -428,7 +479,6 @@ footer div {
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-
     }
 
     #article-service div {
@@ -446,42 +496,8 @@ footer div {
         height: 5vh;
     }
 
-
-    #project section {
-        height: 470vh;
-    }
-
-    #project article {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    #project article img {
-        height: 80vh;
-        width: 90%;
-        margin: 5vh auto;
-    }
-
-    #back-project {
-        height: 80vh;
-        width: 90%;
-        position: relative;
-        top: -450vh;
-        margin: 5vh auto;
-    }
-
-    #back-project div {
-        height: 60vh;
-        width: 80%;
-        margin: 10vh auto;
-    }
-
-    #back-project div:hover {
-        margin: 5vh auto;
-        height: 70vh;
-        width: 90%;
+    #project article #img {
+        width: 80vw;
     }
 
     #info-contact {
@@ -494,14 +510,10 @@ footer div {
         width: 100%;
         margin: auto;
         text-align: center;
-        background-color: black;
-        color: white;
     }
 
     #info-contact article {
-        background-color: rgba(0, 0, 0, 0.37);
         text-align: center;
-        color: wheat;
         width: 100%;
     }
 
@@ -511,5 +523,4 @@ footer div {
         background-color: whitesmoke;
         text-align: center;
     }
-
 }

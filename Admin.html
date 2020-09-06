@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="style/css/admin.css">
+    <script src="js/js.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="" alt="img" onclick="document.getElementById('menu').style.display='block'" /></a>
+        <a href="#">Loge Out IMANE</a>
+    </header>
+    <nav id="menu">
+        <ul>
+            <li id="close"><a href="#" onclick="document.getElementById('menu').style.display='none'">CLOSE</a></li>
+            <li id="HEADER" onclick="sectionHEADER()"><a href="#">HEADER</a></li>
+            <li id="ABOUT" onclick="sectionABOUT()"><a href="#" onclick="">ABOUT ME</a></li>
+            <li id="SERVICES" onclick="sectionSERVICES()"><a href="#" onclick="">MY SERVICE</a></li>
+            <li id="VEDEO" onclick="sectionVEDEO()"><a href="#" onclick="">VEDEO</a></li>
+            <li id="PROJECT" onclick="sectionPROJECT()"><a href="#" onclick="">MY PROJECT</a></li>
+            <li id="CONTACT" onclick="sectionCONTACT()"><a href="#" onclick="">MY CONTACT</a></li>
+            <li id="LOGIN" onclick=" sectionLOGIN()"><a href="#" onclick="">LOGIN</a></li>
+        </ul>
+    </nav>
+    <form id="form1" method="POST">
+        <div id="ferme">
+            <button id="x" onclick="document.getElementById('form1').style.display='none'">&times;</button>
+        </div>
+        <section id="section-HEADER">
+            <h1>UPDATE HEADER</h1>
+            <input type="text" placeholder="check title" />
+            <input type="text" placeholder="check title" />
+        </section>
+        <section id="section-ABOUT">
+            <h1>UPDATE ABOUT</h1>
+            <input type="text" placeholder="check title" />
+            <textarea placeholder="check text"></textarea>
+        </section>
+        <section id="section-SERVICES">
+            <h1>UPDATE SERVICES</h1>
+            <input type="text" placeholder="check id" />
+            <input type="file" />
+            <input type="text" placeholder="check title of service" />
+            <textarea placeholder="check text"></textarea>
+        </section>
+        <section id="section-VEDEO">
+            <h1>UPDATE VEDEO</h1>
+            <input type="file" />
+        </section>
+        <section id="section-PROJECT">
+            <h1>UPDATE PROJECT</h1>
+            <input type="file" />
+        </section>
+        <section id="section-CONTACT">
+            <h1>UPDATE CONTACT</h1>
+            <input type="text" placeholder="check Number " />
+            <input type="text" placeholder="check Email" />
+        </section>
+        <section id="section-LOGIN">
+            <h1>UPDATE LOGIN</h1>
+            <input type="text" placeholder="check Password" />
+        </section>
+        <input type="submit" id="update" value="UPDATE" />
+    </form>
+</body>
+
+</html>
