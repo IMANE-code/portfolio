@@ -17,7 +17,7 @@ header {
     width: 100vw;
     color: white;
     height: 100vh;
-    background-image: url('../../design/img/Girl vibes.jpg');
+    background-image: url('../../design/img/L.jpg');
     background-position: center center;
     background-attachment: fixed;
     background-size: cover;
@@ -92,7 +92,10 @@ header {
 }
 
 nav.black {
-    background: #9399ff;
+    background: url("../../design/img/Dégradés de couleurs _ comment et pourquoi _ - 99designs.png");
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
 }
 
 @media only screen and (max-width:1000px) {
@@ -127,24 +130,17 @@ nav.black {
 
 }
 
-.banner-text h1 {
+.banner-text h1,
+.banner-text h2 {
     animation: zoom 6s infinite;
     overflow: hidden;
     white-space: nowrap;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-image: linear-gradient(90deg, #9ba0ff, #f784ff);
+    background-image: url("../../design/img/Dégradés de couleurs _ comment et pourquoi _ - 99designs.png");
     background-repeat: repeat;
     font-size: 2.5rem;
     font-weight: 900;
-}
-
-.banner-text h2 {
-    font-size: 2.5rem;
-    text-shadow: 10px 10px 6px #faafff;
-    width: 24ch;
-    font-weight: 900;
-    animation: zoom 6s infinite;
 }
 
 
@@ -182,7 +178,7 @@ nav.black {
     50% {
         width: 300px;
         background-image: linear-gradient(180deg, #faafff, #9399ff);
-        height: 60px;
+        height: 55px;
     }
 
     100% {
@@ -215,9 +211,9 @@ nav.black {
 }
 
 #article-about {
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 5%;
-    background-color: #faafff;
+    background-color: whitesmoke;
 }
 
 .about-skills {
@@ -291,7 +287,7 @@ nav.black {
     width: 100vw;
     height: cover;
     padding: 3vh;
-    background-image: linear-gradient(90deg, #faafff, #9399ff);
+    background-color: #9399ff;
     overflow-x: hidden;
 }
 
